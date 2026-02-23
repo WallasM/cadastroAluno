@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
 
 public class CadastroAluno {
 
@@ -16,7 +19,7 @@ public class CadastroAluno {
 
         while (opcao != 5) {
 
-            System.out.println("\n1 - Cadastrar");
+            System.out.println("1 - Cadastrar");
             System.out.println("2 - Buscar");
             System.out.println("3 - Listar");
             System.out.println("4 - Remover");
@@ -24,7 +27,7 @@ public class CadastroAluno {
             System.out.print("Escolha: ");
 
             opcao = sc.nextInt();
-            sc.nextLine(); // limpar buffer
+            sc.nextLine();
 
             if (opcao == 1) cadastrar();
             else if (opcao == 2) buscar();
@@ -35,9 +38,9 @@ public class CadastroAluno {
         }
     }
 
-    // -------------------------
+    
     // CADASTRAR
-    // -------------------------
+    
     static void cadastrar() {
 
         System.out.print("Nome: ");
